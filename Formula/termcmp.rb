@@ -1,25 +1,25 @@
 class Termcmp < Formula
   desc "Terminal-native autocomplete engine using PTY proxying for macOS and Linux terminals"
   homepage "https://github.com/emretuna/termcmp"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/emretuna/termcmp/releases/download/v0.1.0/termcmp-aarch64-apple-darwin.tar.xz"
-      sha256 "24a8993d29b41a725028f221cb648060b1dcf55672e669a8fa6c5ad93910c845"
+      url "https://github.com/emretuna/termcmp/releases/download/v0.1.1/termcmp-aarch64-apple-darwin.tar.xz"
+      sha256 "e4a2fcd545f17e7638b8509d815fd0c152bfd8fb6da711c63c1de0457ee0847b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emretuna/termcmp/releases/download/v0.1.0/termcmp-x86_64-apple-darwin.tar.xz"
-      sha256 "8d498769c267d10fb1b8a1a1a2b808294c0061d93d38ca2e5595fd8578ab8272"
+      url "https://github.com/emretuna/termcmp/releases/download/v0.1.1/termcmp-x86_64-apple-darwin.tar.xz"
+      sha256 "2ed33f4f6f9929dad721064003cfeb92c07fd301af34af4427b3652aeb144ccf"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/emretuna/termcmp/releases/download/v0.1.0/termcmp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "593c9b833086002dda12e6fc7aca614e116b610d72fd90082742ad9764b4f654"
+      url "https://github.com/emretuna/termcmp/releases/download/v0.1.1/termcmp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d6be4419b9d23562e3c8cc7cd9fa415b04ced26d7389b6bb99ebf0a6b0997be8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/emretuna/termcmp/releases/download/v0.1.0/termcmp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fdc86bd64f37623b8d0c67ea80e6fcd5934cbed0043162e8c61dc55b043ef3a1"
+      url "https://github.com/emretuna/termcmp/releases/download/v0.1.1/termcmp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c3913228e0f04c1cc974b43e22d30d20a94dfae8e9683cba4b9beb0486bb56fe"
     end
   end
   license "MIT"
