@@ -5,21 +5,21 @@ class Termcmp < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/emretuna/termcmp/releases/download/v0.1.2/termcmp-aarch64-apple-darwin.tar.xz"
-      sha256 "666a0f194b72b42f920b64623ef3483bcd9b3a5e300574868c713472c5c2fb02"
+      sha256 "fa25ec4d221ee9bcdce4441e3db9c0b59146fcfe47c07303a3b068d363ac6463"
     end
     if Hardware::CPU.intel?
       url "https://github.com/emretuna/termcmp/releases/download/v0.1.2/termcmp-x86_64-apple-darwin.tar.xz"
-      sha256 "e35b1d011c9541ef534ca49afd386140f47c4a3b613be4a0244e834a5f1bdba2"
+      sha256 "2bb9dc5ae362181dc2312bf839dc8e10b841360ea434246e6778275b2a087153"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/emretuna/termcmp/releases/download/v0.1.2/termcmp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "bf047c32798c884920abdece68c8a96b0339eb9b0e375f7d9446beecb5fab4ef"
+      sha256 "132a390fac2c63022a7587822e676229c34faed8304036f340c482d0f3103344"
     end
     if Hardware::CPU.intel?
       url "https://github.com/emretuna/termcmp/releases/download/v0.1.2/termcmp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "27ab33b645988b1a0113b0c3724447a8d01c86947eefe14c3cafb55cf1e41889"
+      sha256 "d82da785b94507d13ba5cbe5e16668168eff31e5c5a01bb47ed2d19cb4b245b5"
     end
   end
   license "MIT"
